@@ -263,15 +263,15 @@
             <h2 class="section-title">Soyez parmi les premiers à essayer VIVA</h2>
             <p>Inscrivez-vous pour recevoir un accès anticipé à notre version bêta.</p>
             <div class="signup-form">
-                <form id="waitlist-form">
+                <form action="https://formspree.io/f/xnndrjzk" method="POST" id="waitlist-form">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Votre nom" required>
+                        <input type="text" name="nom" class="form-control" placeholder="Votre nom" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Votre email" required>
+                        <input type="email" name="email" class="form-control" placeholder="Votre email" required>
                     </div>
                     <div class="form-group">
-                        <select class="form-control">
+                        <select name="interet" class="form-control">
                             <option value="" disabled selected>Quelle fonctionnalité vous intéresse le plus ?</option>
                             <option value="style">Conseils vestimentaires</option>
                             <option value="nutrition">Analyse nutritionnelle</option>
@@ -317,14 +317,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        // Script simple pour capturer les inscriptions
-        document.getElementById('waitlist-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Merci pour votre inscription ! Nous vous contacterons dès que la version bêta sera disponible.');
-            this.reset();
-        });
-    </script>
 </body>
 </html>
